@@ -7,9 +7,9 @@
  */
 function hicri(paramMiladi) {
     const gap = paramMiladi - 621;
-    const miladi = gap + (gap % 33)
+    const hijri = gap + (gap % 33);
 
-    return miladi
+    return hijri
 }
 
 /**
@@ -19,8 +19,8 @@ function hicri(paramMiladi) {
  * The function returns Gregorian equivalent of Hijri calendar
  */
 function miladi(paramHijri) {
-    const gap = paramHijri % 33
-    const miladi = paramHijri - gap + 622
+    const gap = paramHijri % 33;
+    const miladi = paramHijri - gap + 622;
 
     return miladi
 }

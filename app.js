@@ -5,7 +5,9 @@
  * For Hijri convertion it needs to be entered 'H' letter and for Gregorian 'G'
  * 
  */
-const { hijri, gregorian } = require('./calendar');
+
+const hijri = require('./src/hicri-converter');
+const gregorian = require('./src/miladi-converter');
 
 const year = Number(process.argv[2]); // the year which is to be converted
 const typeOfTransformation = process.argv[3]; // for Hijri 'H' and for Gregorian 'G'
